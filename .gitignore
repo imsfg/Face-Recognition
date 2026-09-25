@@ -9,3 +9,8 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Signing material must never be committed
+*.jks
+*.keystore
+keystore.properties
