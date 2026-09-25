@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FaceAttend</string>
+
+    <string name="title_login">Sign in</string>
+    <string name="title_staff_list">Staff</string>
+    <string name="title_add_staff">Add staff</string>
+    <string name="title_staff_profile">Staff profile</string>
+    <string name="title_enroll_face">Enrol face</string>
+    <string name="title_staff_home">Attendance</string>
+    <string name="title_mark_attendance">Mark attendance</string>
+    <string name="title_attendance_result">Result</string>
+    <string name="title_attendance_history">Attendance history</string>
+
+    <string name="hint_username">Username or employee ID</string>
+    <string name="hint_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_out">Sign out</string>
+    <string name="error_invalid_credentials">Incorrect username or password</string>
+    <string name="error_empty_fields">Enter both a username and a password</string>
+    <string name="login_hint_demo">Admin: admin / admin123\nStaff: EMP001 / staff123</string>
+
+    <string name="hint_staff_name">Full name</string>
+    <string name="hint_employee_id">Employee ID</string>
+    <string name="action_save">Save</string>
+    <string name="error_name_required">Name is required</string>
+    <string name="error_employee_id_required">Employee ID is required</string>
+    <string name="staff_added">Staff member added</string>
+    <string name="empty_staff_list">No staff yet. Add the first one with the + button.</string>
+
+    <string name="label_enrolled">Face enrolled</string>
+    <string name="label_not_enrolled">No face enrolled</string>
+    <string name="action_enrol_face">Enrol face</string>
+    <string name="action_reenrol_face">Re-enrol face</string>
+    <string name="action_view_history">View attendance history</string>
+    <string name="enrollment_saved">Face enrolled successfully</string>
+
+    <string name="action_mark_attendance">Mark attendance</string>
+    <string name="action_capture">Capture</string>
+    <string name="capture_hint_enrol">Centre the staff member\'s face in the frame</string>
+    <string name="capture_hint_attendance">Centre your face in the frame</string>
+    <string name="error_no_face">No face detected — try again in better light</string>
+    <string name="error_not_enrolled">No face is enrolled for this account. Ask an admin to enrol you first.</string>
+    <string name="error_capture_failed">Could not process the photo. Please try again.</string>
+
+    <string name="permission_camera_rationale">Camera access is needed to capture a selfie.</string>
+    <string name="permission_grant">Grant permission</string>
+
+    <string name="result_matched">Attendance marked</string>
+    <string name="result_not_matched">Face did not match</string>
+    <string name="result_not_matched_detail">This attempt was logged but attendance was not marked.</string>
+    <string name="label_similarity">Match confidence: %1$.2f</string>
+    <string name="label_time">Time: %1$s</string>
+    <string name="label_location">Location: %1$s</string>
+    <string name="location_unavailable">unavailable</string>
+    <string name="action_done">Done</string>
+
+    <string name="empty_history">No attendance records yet.</string>
+    <string name="staff_row_enrolled">Enrolled</string>
+    <string name="staff_row_pending">Not enrolled</string>
+
+    <string name="cd_selfie">Selfie</string>
+    <string name="cd_add_staff">Add staff</string>
+</resources>

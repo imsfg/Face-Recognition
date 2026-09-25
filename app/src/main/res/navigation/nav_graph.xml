@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.faceattend.app.ui.login.LoginFragment"
+        android:label="@string/title_login"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_login_to_staffList"
+            app:destination="@id/staffListFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_login_to_staffHome"
+            app:destination="@id/staffHomeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/staffListFragment"
+        android:name="com.faceattend.app.ui.admin.stafflist.StaffListFragment"
+        android:label="@string/title_staff_list"
+        tools:layout="@layout/fragment_staff_list">
+        <action
+            android:id="@+id/action_staffList_to_addStaff"
+            app:destination="@id/addStaffFragment" />
+        <action
+            android:id="@+id/action_staffList_to_staffProfile"
+            app:destination="@id/staffProfileFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/addStaffFragment"
+        android:name="com.faceattend.app.ui.admin.addstaff.AddStaffFragment"
+        android:label="@string/title_add_staff"
+        tools:layout="@layout/fragment_add_staff" />
+
+    <fragment
+        android:id="@+id/staffProfileFragment"
+        android:name="com.faceattend.app.ui.admin.profile.StaffProfileFragment"
+        android:label="@string/title_staff_profile"
+        tools:layout="@layout/fragment_staff_profile">
+        <argument
+            android:name="staffId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_staffProfile_to_enrollFace"
+            app:destination="@id/enrollFaceFragment" />
+        <action
+            android:id="@+id/action_staffProfile_to_attendanceHistory"
+            app:destination="@id/attendanceHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/enrollFaceFragment"
+        android:name="com.faceattend.app.ui.admin.enroll.EnrollFaceFragment"
+        android:label="@string/title_enroll_face"
+        tools:layout="@layout/fragment_capture">
+        <argument
+            android:name="staffId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/staffHomeFragment"
+        android:name="com.faceattend.app.ui.staff.home.StaffHomeFragment"
+        android:label="@string/title_staff_home"
+        tools:layout="@layout/fragment_staff_home">
+        <action
+            android:id="@+id/action_staffHome_to_markAttendance"
+            app:destination="@id/markAttendanceFragment" />
+        <action
+            android:id="@+id/action_staffHome_to_attendanceHistory"
+            app:destination="@id/attendanceHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/markAttendanceFragment"
+        android:name="com.faceattend.app.ui.staff.attendance.MarkAttendanceFragment"
+        android:label="@string/title_mark_attendance"
+        tools:layout="@layout/fragment_capture">
+        <action
+            android:id="@+id/action_markAttendance_to_result"
+            app:destination="@id/attendanceResultFragment"
+            app:popUpTo="@id/markAttendanceFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/attendanceResultFragment"
+        android:name="com.faceattend.app.ui.staff.result.AttendanceResultFragment"
+        android:label="@string/title_attendance_result"
+        tools:layout="@layout/fragment_attendance_result">
+        <argument
+            android:name="attendanceId"
+            app:argType="long" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/attendanceHistoryFragment"
+        android:name="com.faceattend.app.ui.staff.history.AttendanceHistoryFragment"
+        android:label="@string/title_attendance_history"
+        tools:layout="@layout/fragment_attendance_history">
+        <argument
+            android:name="staffId"
+            app:argType="long" />
+    </fragment>
+
+</navigation>

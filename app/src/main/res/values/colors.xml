@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="brand_primary">#1A3D6D</color>
+    <color name="brand_on_primary">#FFFFFF</color>
+    <color name="brand_secondary">#2E7D6B</color>
+
+    <!-- Fixed across themes: the bar keeps brand navy with white content in dark mode too. -->
+    <color name="toolbar_background">#1A3D6D</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="success">#2E7D32</color>
+    <color name="failure">#C62828</color>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Light-on-dark: navy as a foreground colour is unreadable on a dark surface, so the
+         primary flips to a light blue and takes dark text on top of it. -->
+    <color name="brand_primary">#9FC3F0</color>
+    <color name="brand_on_primary">#0A2647</color>
+    <color name="brand_secondary">#7FCBB8</color>
+
+    <color name="success">#81C784</color>
+    <color name="failure">#EF9A9A</color>
+</resources>
